@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="InventoryService">
+      <HintPath>..\InventoryService\bin\Debug\net9.0\InventoryService.dll</HintPath>
+    </Reference>
+    <Reference Include="OrderService">
+      <HintPath>..\OrderService\bin\Debug\net9.0\OrderService.dll</HintPath>
+    </Reference>
+    <Reference Include="PaymentService">
+      <HintPath>..\PaymentService\bin\Debug\net9.0\PaymentService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
